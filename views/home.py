@@ -4,20 +4,6 @@ st.markdown("""
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 """, unsafe_allow_html=True)
 
-custom_css = """
-<style>
-/* Center headings and other elements on smaller devices */
-@media (max-width: 768px) {
-    h1, h2, h3, h4, h5, h6, .responsive-center {
-        text-align: center !important;
-    }
-}
-</style>
-"""
-
-# Apply the common CSS globally
-st.markdown(custom_css, unsafe_allow_html=True)
-
 st.markdown("""
     <div style="text-align:center; background-color:#fff; padding: 20px; border-radius: 16px; margin-bottom: 4rem;">
         <h1 style="margin: 0; padding:0;">Welcome to</h1>
@@ -82,3 +68,17 @@ st.markdown("""
         </a>
     </div>
 """, unsafe_allow_html=True)
+
+custom_css = """
+<style>
+/* Center headings and other elements on smaller devices */
+@media (max-width: 768px) {
+    h1, h2, h3, h4, h5, h6, .responsive-center {
+        text-align: center !important;
+    }
+}
+</style>
+"""
+
+# Apply the common CSS globally
+st.markdown(custom_css, unsafe_allow_html=True)
