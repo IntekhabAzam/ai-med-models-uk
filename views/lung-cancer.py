@@ -16,6 +16,10 @@ lung_cancer_model = load_model('models/lung_cancer_model.h5', compile=False)
 
 lung_cancer_classes = ['Benign', 'Malignant', 'Normal']
 
+st.markdown("""
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+""", unsafe_allow_html=True)
+
 
 custom_css = f"""
     <style>
@@ -55,10 +59,47 @@ custom_css = f"""
     .prediction-box span {{
         color: #1976D2;
     }}
+    .highlights {{
+        background-color: #fff;
+        padding: 16px;
+        border-radius: 10px;
+        margin-bottom: 32px;
+    }}
+    .highlights ul {{
+        margin: 0;
+        padding-left: 20px;
+    }}
+    .highlights li {{
+        font-size: 1rem;
+        color: #000;
+    }}
     </style>
     """
 
 st.markdown(custom_css, unsafe_allow_html=True)
+
+# Add highlights section
+st.markdown(
+    """
+    <div class="highlights">
+        <div style="font-size: 24px; font-weight: bold; margin-bottom: 10px; color: #000"></div>
+        <div style="display: flex; align-items: center; margin-bottom: 15px; gap: 8px;">
+            <i class="fas fa-lungs" style="font-size: 1.5rem; color: #000; margin-right: 10px;"></i>
+            <p style="font-size: 1.1rem; line-height: 1.8; margin: 0; color: #555;">
+                Early detection of lung cancer, including carcinoma and malignant tumors, enables timely treatment, increasing the chances of recovery and saving lives.
+            </p>
+        </div>
+        <div style="display: flex; align-items: center; margin-bottom: 15px; gap: 8px;">
+            <i class="fas fa-lungs" style="font-size: 1.5rem; color: #000; margin-right: 10px;"></i>
+            <p style="font-size: 1.1rem; line-height: 1.8; margin: 0; color: #555;">
+                AI-powered analysis and imaging facilitate the early detection of Chronic Obstructive Pulmonary Disease (COPD) and other lung conditions, leading to better treatment outcomes and improved patient care.
+            </p>
+        </div>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
 
 # Initialize session state
 if "prediction" not in st.session_state:

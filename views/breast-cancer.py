@@ -16,6 +16,10 @@ breast_cancer_model = load_model('models/breast_cancer_model.h5', compile=False)
 breast_cancer_scaler = joblib.load('models/breast_cancer_scaler.pkl')
 breast_cancer_classes = ['Malignant', 'Benign']
 
+st.markdown("""
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+""", unsafe_allow_html=True)
+
 custom_css = f"""
     <style>
     [data-testid="stAppViewContainer"] {{
@@ -86,6 +90,12 @@ custom_css = f"""
         # width: 30%;
         margin: 50px auto;
     }}
+    .highlights {{
+        background-color: #fff;
+        padding: 16px;
+        border-radius: 10px;
+        margin-top: 32px;
+    }}
     </style>
     """
 
@@ -107,6 +117,20 @@ st.markdown(
         <div class="prediction-box">
         <h4>Prediction: <span>{prediction_text}</span></h4>
     </div>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+st.markdown(
+    """
+    <div class="highlights">
+        <div style="display: flex; align-items: center; margin-bottom: 15px; gap: 8px;">
+            <i class="fas fa-ribbon" style="font-size: 2rem; color: #000; margin-right: 10px;"></i>
+            <p style="font-size: 1.1rem; line-height: 1.8; margin: 0; color: #555;">
+                Early detection of breast cancer through mammograms, MRI scans, and AI-powered analysis enables timely treatment, including therapy and surgery. By identifying cancer at its initial stages, it becomes easier to treat, significantly improving the chances of a full recovery and better patient outcomes.
+            </p>
+        </div>
     </div>
     """,
     unsafe_allow_html=True

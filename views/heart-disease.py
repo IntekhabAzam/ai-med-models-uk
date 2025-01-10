@@ -16,6 +16,10 @@ heart_disease_model = joblib.load('models/heart_disease_model.pkl')
 
 heart_disease_classes = ['No Disease', 'Disease']
 
+st.markdown("""
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+""", unsafe_allow_html=True)
+
 
 custom_css = f"""
     <style>
@@ -53,10 +57,30 @@ custom_css = f"""
     .prediction-box span {{
         color: #1976D2;
     }}
+    .highlights {{
+        background-color: #fff;
+        padding: 16px;
+        border-radius: 10px;
+        margin-bottom: 32px;
+    }}
     </style>
     """
 
 st.markdown(custom_css, unsafe_allow_html=True)
+
+st.markdown(
+    """
+    <div class="highlights">
+        <div style="display: flex; align-items: center; margin-bottom: 15px; gap: 8px;">
+            <i class="fas fa-heart" style="font-size: 2rem; color: #000; margin-right: 10px;"></i>
+            <p style="font-size: 1.1rem; line-height: 1.8; margin: 0; color: #555;">
+                Early detection of cardiovascular diseases (CVD) through advanced AI-driven data analysis, our AI models can identify potential heart conditions and provide actionable insights for timely interventions.
+            </p>
+        </div>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 # Initialize session state
 if "prediction" not in st.session_state:

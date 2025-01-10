@@ -116,37 +116,42 @@ st.markdown(custom_css, unsafe_allow_html=True)
 
 # --- PAGE SETUP ---
 home_page = st.Page(
-    "views/home.py",
-    title="Home",
-    icon=":material/home:",
+    "views/about-company.py",
+    title="About Company",
+    icon=":material/apartment:",
     default=True,
 )
-project_1_page = st.Page(
+# project_1_page = st.Page(
+#     "views/home.py",
+#     title="Home",
+#     icon=":material/home:",  
+# )
+project_2_page = st.Page(
     "views/brain-tumor.py",
     title="Brain Tumor",
     icon=":material/neurology:",
 )
-project_2_page = st.Page(
+project_3_page = st.Page(
     "views/lung-cancer.py",
     title="Lung Cancer",
     icon=":material/pulmonology:",
 )
-project_3_page = st.Page(
+project_4_page = st.Page(
     "views/eye-disease.py",
     title="Eye Disease",
     icon=":material/visibility:",
 )
-project_4_page = st.Page(
+project_5_page = st.Page(
     "views/heart-disease.py",
     title="Heart Disease",
     icon=":material/favorite:",
 )
-project_5_page = st.Page(
+project_6_page = st.Page(
     "views/breast-cancer.py",
     title="Breast Cancer",
     icon=":material/female:",
 )
-project_6_page = st.Page(
+project_7_page = st.Page(
     "views/chatbot.py",
     title="Diagnostic GPT",
     icon=":material/smart_toy:",
@@ -154,7 +159,7 @@ project_6_page = st.Page(
 
 
 # --- NAVIGATION SETUP [WITHOUT SECTIONS] ---
-pg = st.navigation(pages=[home_page, project_1_page, project_2_page, project_3_page, project_4_page, project_5_page, project_6_page])
+pg = st.navigation(pages=[home_page, project_2_page, project_3_page, project_4_page, project_5_page, project_6_page, project_7_page])
 
 
 # --- SHARED ON ALL PAGES ---

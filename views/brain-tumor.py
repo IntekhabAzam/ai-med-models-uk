@@ -16,6 +16,10 @@ brain_tumor_model = load_model('models/brain_tumor_model.h5', compile=False)
 
 brain_tumor_classes = ['Benign Tumor', 'Malignant Tumor']
 
+st.markdown("""
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+""", unsafe_allow_html=True)
+
 
 custom_css = f"""
     <style>
@@ -53,11 +57,39 @@ custom_css = f"""
     .prediction-box span {{
         color: #1976D2;
     }}
+    .highlights {{
+        background-color: #fff;
+        padding: 16px;
+        border-radius: 10px;
+        margin-bottom: 32px;
+    }}
+    .highlights ul {{
+        margin: 0;
+        padding-left: 20px;
+    }}
+    .highlights li {{
+        font-size: 1rem;
+        color: #000;
+    }}
     </style>
     """
 
 st.markdown(custom_css, unsafe_allow_html=True)
 
+# Add highlights section
+st.markdown(
+    """
+    <div class="highlights">
+        <div style="display: flex; align-items: center; margin-bottom: 15px; gap: 8px;">
+            <i class="fas fa-brain" style="font-size: 1.5rem; color: #000; margin-right: 10px;"></i>
+            <p style="font-size: 1.1rem; line-height: 1.8; margin: 0; color: #555;">
+                Early detection of brain cancer, including tumors such as meningiomas and other types, is made possible through AI-powered analysis of CT and MRI scans. This enables timely diagnosis, allowing for treatment to begin before the tumor progresses.
+            </p>
+        </div>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 # Initialize session state
 if "prediction" not in st.session_state:

@@ -15,6 +15,10 @@ eye_disease_model = load_model('models/eye_disease_model.h5', compile=False)
 
 eye_disease_classes = ['Glaucoma', 'Cataract', 'Diabetic Retinopathy', 'Macular Degeneration']
 
+st.markdown("""
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+""", unsafe_allow_html=True)
+
 
 custom_css = f"""
     <style>
@@ -52,10 +56,30 @@ custom_css = f"""
     .prediction-box span {{
         color: #1976D2;
     }}
+    .highlights {{
+        background-color: #fff;
+        padding: 16px;
+        border-radius: 10px;
+        margin-bottom: 32px;
+    }}
     </style>
     """
 
 st.markdown(custom_css, unsafe_allow_html=True)
+
+st.markdown(
+    """
+    <div class="highlights">
+        <div style="display: flex; align-items: center; margin-bottom: 15px; gap: 8px;">
+            <i class="fas fa-eye" style="font-size: 2rem; color: #000; margin-right: 10px;"></i>
+            <p style="font-size: 1.1rem; line-height: 1.8; margin: 0; color: #555;">
+                Early detection of eye diseases such as retinopathy, cataracts, glaucoma, and macular degeneration is made possible through AI-driven data analysis, enabling timely interventions and improved vision care outcomes.
+            </p>
+        </div>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 # Initialize session state
 if "prediction" not in st.session_state:
