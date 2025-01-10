@@ -21,10 +21,12 @@ st.markdown("""
             <h1 style="font-size: 3rem; font-weight: bold;">AI-MED MODELS LIMITED</h1>
             <p style="font-size: 1.3rem;">Transforming Healthcare with Innovative AI</p>
         </div>
-        <p style="text-align: justify; color: #555; font-size: 1.1rem; margin-bottom: 30px;">
+        <p style="color: #555; font-size: 1.1rem; margin-bottom: 30px;">
             <b style="color: #0D47A1;">AI-MED MODELS LIMITED</b>, is an Artificial Intelligence technology company based in the United Kingdom, aimed for the development of artificial Intelligence in the field of medical science and other sectors.
             <br><br>
-            Through our innovative research and cutting-edge generative AI technology, we enable the early and highly accurate detection of diseases, saving valuable time and millions of dollars. Artificial intelligence is revolutionizing healthcare, becoming a powerful tool that transforms the practice of medicine.
+            Through our innovative research and cutting-edge generative AI technology, we enable the early and highly accurate detection of diseases, saving valuable time and millions of dollars.
+            <br><br>
+            Artificial intelligence is revolutionizing healthcare, becoming a powerful tool that transforms the practice of medicine. Our AI advancements in healthcare outline a roadmap for developing effective, reliable, and safe AI solutions.
         </p>
     </div>
 """, unsafe_allow_html=True)
@@ -65,6 +67,13 @@ st.markdown("""
         .vision-card p {
             color: #555;
         }
+            
+        /* Media Query for smaller devices */
+        @media (max-width: 768px) {
+            .vision-container {
+                grid-template-columns: 1fr;  /* Stack cards into a single column */
+            }
+        }
     </style>
 """, unsafe_allow_html=True)
 
@@ -74,12 +83,12 @@ st.markdown("""
         <div class="vision-card">
             <i class="fas fa-heartbeat" style="font-size: 2rem; color: #0D47A1;"></i>
             <h4>Health Accessibility</h4>
-            <p>Ensuring that AI-driven healthcare solutions are accessible to all individuals globally, regardless of location or socioeconomic status.</p>
+            <p>Enhance population health and improve patient care experiences by ensuring AI-driven healthcare solutions are accessible to all individuals worldwide, regardless of location or socioeconomic status.</p>
         </div>
         <div class="vision-card">
             <i class="fas fa-dollar-sign" style="font-size: 2rem; color: #0D47A1;"></i>
             <h4>Reducing Healthcare Costs</h4>
-            <p>AI innovations help reduce the rising costs of healthcare globally by optimizing resource utilization and improving efficiency in healthcare delivery.</p>
+            <p>The increasing costs of healthcare worldwide are creating challenges for authorities, governments, hospitals, regulators, and providers, urging them to innovate and transform healthcare models to ensure the delivery of effective, high-quality care.</p>
         </div>
         <div class="vision-card">
             <i class="fas fa-chart-line" style="font-size: 2rem; color: #0D47A1;"></i>
@@ -89,17 +98,17 @@ st.markdown("""
         <div class="vision-card">
             <i class="fas fa-people-carry" style="font-size: 2rem; color: #0D47A1;"></i>
             <h4>Workforce Empowerment</h4>
-            <p>Addressing workforce shortages and inequities in healthcare access, AI tools help support healthcare workers in providing timely care while reducing burnout.</p>
+            <p>The pandemic has highlighted workforce shortages and inequities in healthcare access. By addressing these challenges, AI tools assist healthcare workers in delivering timely care while reducing burnout.</p>
         </div>
         <div class="vision-card">
             <i class="fas fa-network-wired" style="font-size: 2rem; color: #0D47A1;"></i>
             <h4>Bridging Healthcare Gaps</h4>
-            <p>AI addresses the growing gap between supply and demand for healthcare staff, helping to match workforce resources with the healthcare needs of global populations.</p>
+            <p>AI helps bridge the gap between the supply and demand for healthcare staff employed by authorities and trusts, aligning workforce resources with the evolving healthcare needs of the global population.</p>
         </div>
         <div class="vision-card">
             <i class="fas fa-robot" style="font-size: 2rem; color: #0D47A1;"></i>
             <h4>AI-Driven Supply and Demand Balance</h4>
-            <p>The application of AI in healthcare optimizes staffing solutions and improves the allocation of healthcare resources, ensuring a better balance between supply and demand.</p>
+            <p>The application of technology and artificial intelligence (AI) in healthcare has the potential to optimize staffing solutions and improve the allocation of resources, effectively addressing supply-and-demand challenges.</p>
         </div>
     </div>
 """, unsafe_allow_html=True)
@@ -114,7 +123,7 @@ st.markdown("""
         box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1); 
         margin-bottom: 5rem;">
         <h2 style="text-align: center; color: #0D47A1; font-weight: bold; font-size: 2rem; margin-bottom: 20px;">AI Healthcare Transformation</h2>
-        <p style="text-align: justify; color: #555; font-size: 1.1rem; margin-bottom: 30px;">
+        <p style="color: #555; font-size: 1.1rem; margin-bottom: 30px;">
             The increasing availability of multi-modal data, including genomics, economic, demographic, clinical, and phenotypic data, 
             coupled with advancements in technology such as mobile, internet, computing power, and data security, marks a moment 
             of convergence between healthcare and technology. This convergence has the potential to fundamentally transform 
@@ -126,9 +135,9 @@ st.markdown("""
             Our innovative AI models are already being developed and are suitable for deployment in government hospitals, 
             health ministries, and medical research institutions. These entities, with their massive healthcare budgets, are 
             well-positioned to leverage the power of AI technologies, accelerating the adoption of these advancements in hospitals, 
-            institutes of medical science, and research centers.
+            medical institutes, and research centers.
             <br><br>
-            Many other innovative healthcare AI models under our research and development stages.
+            Many other innovative healthcare AI models are currently in our research and development stages.
         </p>
     </div>
 """, unsafe_allow_html=True)
@@ -157,33 +166,6 @@ with col1:
             border-radius: 16px; 
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
             margin-bottom: 20px;">
-            <i class="fas fa-lungs" style="font-size: 2rem; color: #0D47A1;"></i>
-            <h4 style="color: #0D47A1; margin: 15px 0;">Lung Cancer Detection</h4>
-            <p style="color: #555;">Early detection of carcinoma and malignant tumors ensures timely, life-saving treatment.</p>
-        </div>
-    """, unsafe_allow_html=True)
-
-    st.markdown("""
-        <div style="
-            background: #fff; 
-            padding: 20px; 
-            border-radius: 16px; 
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
-            margin-bottom: 20px;">
-            <i class="fas fa-heart" style="font-size: 2rem; color: #0D47A1;"></i>
-            <h4 style="color: #0D47A1; margin: 15px 0;">Cardiovascular Disease</h4>
-            <p style="color: #555;">Proactively detect heart conditions using AI-driven data analysis and imaging.</p>
-        </div>
-    """, unsafe_allow_html=True)
-
-with col2:
-    st.markdown("""
-        <div style="
-            background: #fff; 
-            padding: 20px; 
-            border-radius: 16px; 
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
-            margin-bottom: 20px;">
             <i class="fas fa-brain" style="font-size: 2rem; color: #0D47A1;"></i>
             <h4 style="color: #0D47A1; margin: 15px 0;">Brain Tumor Detection</h4>
             <p style="color: #555;">AI-integrated scans enable precise diagnosis of brain tumors before progression.</p>
@@ -203,6 +185,33 @@ with col2:
         </div>
     """, unsafe_allow_html=True)
 
+with col2:
+    st.markdown("""
+        <div style="
+            background: #fff; 
+            padding: 20px; 
+            border-radius: 16px; 
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+            margin-bottom: 20px;">
+            <i class="fas fa-lungs" style="font-size: 2rem; color: #0D47A1;"></i>
+            <h4 style="color: #0D47A1; margin: 15px 0;">Lung Cancer Detection</h4>
+            <p style="color: #555;">Early detection of carcinoma and malignant tumors ensures timely, life-saving treatment.</p>
+        </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown("""
+        <div style="
+            background: #fff; 
+            padding: 20px; 
+            border-radius: 16px; 
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+            margin-bottom: 20px;">
+            <i class="fas fa-heart" style="font-size: 2rem; color: #0D47A1;"></i>
+            <h4 style="color: #0D47A1; margin: 15px 0;">Cardiovascular Disease</h4>
+            <p style="color: #555;">Proactively detect heart conditions and disease using AI-driven data analysis.</p>
+        </div>
+    """, unsafe_allow_html=True)
+
 st.markdown("""
     <div style="
         background: #fff; 
@@ -218,14 +227,60 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Call to Action Section
+# st.markdown("""
+#     <div style="
+#         text-align: center; 
+#         margin-top: 2rem; 
+#         padding: 30px; 
+#         background: #FFFFFF; 
+#         border-radius: 16px; 
+#         color: #0D47A1; 
+#         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+#         <h3 style="margin-bottom: 15px; color: #1976D2;">Ready to Revolutionize Healthcare?</h3>
+#         <p style="font-size: 1.1rem; margin-bottom: 20px;">Join us in leveraging AI for better health outcomes and sustainable systems.</p>
+#         <a href="https://www.aimedmodels.com" target="_blank" style="
+#             display: inline-block; 
+#             padding: 12px 35px; 
+#             background-color: #1976D2; 
+#             color: white; 
+#             font-size: 1rem; 
+#             border-radius: 8px; 
+#             text-decoration: none; 
+#             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); 
+#             transition: background-color 0.3s, transform 0.2s;">
+#             Visit AI-MED Models
+#         </a>
+#         <div style="margin-top: 30px; font-size: 1rem; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; width: 100%; max-width: 800px; margin: 30px auto;">
+#             <div style="text-align: left; border-right: 2px solid #E3F2FD; padding-right: 20px;">
+#                 <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 10px;">
+#                     <i class="fas fa-map-marker-alt" style="margin-right: 8px; color: #1976D2;"></i>
+#                     <span><strong>Address</strong></span>
+#                 </div>
+#                 <p style="margin: 0; line-height: 1.5; text-align: center;">The Technocentre, Coventry University Technology Park, Puma Way, Coventry CV1 2TT, United Kingdom</p>
+#             </div>
+#             <div style="text-align: center; padding-left: 20px;">
+#                 <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 10px;">
+#                     <i class="fas fa-envelope" style="margin-right: 8px; color: #1976D2;"></i>
+#                     <span><strong>Email</strong></span>
+#                 </div>
+#                 <p style="margin: 0; line-height: 1.5;">
+#                     <a href="mailto:info@aimedmodels.com" style="color: #0D47A1; text-decoration: none;">
+#                         info@aimedmodels.com
+#                     </a>
+#                 </p>
+#             </div>
+#         </div>
+#     </div>
+# """, unsafe_allow_html=True)
+
 st.markdown("""
     <div style="
         text-align: center; 
         margin-top: 2rem; 
         padding: 30px; 
-        background: #FFFFFF; 
+        background: #212121; 
         border-radius: 16px; 
-        color: #0D47A1; 
+        color: #E3F2FD; 
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
         <h3 style="margin-bottom: 15px; color: #1976D2;">Ready to Revolutionize Healthcare?</h3>
         <p style="font-size: 1.1rem; margin-bottom: 20px;">Join us in leveraging AI for better health outcomes and sustainable systems.</p>
@@ -242,7 +297,7 @@ st.markdown("""
             Visit AI-MED Models
         </a>
         <div style="margin-top: 30px; font-size: 1rem; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; width: 100%; max-width: 800px; margin: 30px auto;">
-            <div style="text-align: left; border-right: 2px solid #E3F2FD; padding-right: 20px;">
+            <div style="text-align: left; border-right: 2px solid #424242; padding-right: 20px;">
                 <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 10px;">
                     <i class="fas fa-map-marker-alt" style="margin-right: 8px; color: #1976D2;"></i>
                     <span><strong>Address</strong></span>
@@ -255,7 +310,7 @@ st.markdown("""
                     <span><strong>Email</strong></span>
                 </div>
                 <p style="margin: 0; line-height: 1.5;">
-                    <a href="mailto:info@aimedmodels.com" style="color: #0D47A1; text-decoration: none;">
+                    <a href="mailto:info@aimedmodels.com" style="color: #E3F2FD; text-decoration: none;">
                         info@aimedmodels.com
                     </a>
                 </p>
@@ -263,6 +318,7 @@ st.markdown("""
         </div>
     </div>
 """, unsafe_allow_html=True)
+
 
 
 
