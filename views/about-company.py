@@ -164,7 +164,7 @@ st.markdown("""
     <div style="text-align: center; margin-bottom: 2.5rem;">
         <div style="font-size: 2.25rem; color: #0D47A1; font-weight: bold;">Our AI Innovations</div>
         <p style="color: #555; font-size: 1rem; margin-bottom: 1.5rem;">
-            Explore how our AI-driven solutions are reshaping healthcare:
+            Explore how our AI-driven solutions will reshape healthcare:
         </p>
     </div>
 """, unsafe_allow_html=True)
