@@ -253,7 +253,7 @@ with col2:
             margin-bottom: 20px;">
             <i class="fas fas fa-head-side-mask" style="font-size: 2rem; color: #0D47A1;"></i>
             <h4 style="color: #0D47A1; margin: 15px 0;">COPD Detection</h4>
-            <p style="color: #555;">AI-powered early detection of Chronic Obstructive Pulmonary Disease (COPD) and other lung diseases using data analysis and scans.<br>Many other innovative healthcare AI models under our research and development stages.</p>
+            <p style="color: #555;">AI-powered early detection of Chronic Obstructive Pulmonary Disease (COPD) and other lung diseases using data analysis and scans.</p>
         </div>
     """, unsafe_allow_html=True)
 
