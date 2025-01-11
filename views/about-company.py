@@ -1,4 +1,9 @@
 import streamlit as st
+from utils import get_img_as_base64
+
+
+clients1 = get_img_as_base64("assets/clients1.png")
+clients2 = get_img_as_base64("assets/clients2.png")
 
 # Include Font Awesome for icons
 st.markdown("""
@@ -182,7 +187,7 @@ with col1:
             margin-bottom: 20px;">
             <i class="fas fa-brain" style="font-size: 2rem; color: #0D47A1;"></i>
             <h4 style="color: #0D47A1; margin: 15px 0;">Brain Tumor Detection</h4>
-            <p style="color: #555;">AI-integrated scans enable precise diagnosis of brain tumors before progression.</p>
+            <p style="color: #555;">Early detection of brain cancer, meningioma, and other tumors using AI-enhanced CT and MRI scans before tumor progression.</p>
         </div>
     """, unsafe_allow_html=True)
 
@@ -195,8 +200,21 @@ with col1:
             margin-bottom: 20px;">
             <i class="fas fa-eye" style="font-size: 2rem; color: #0D47A1;"></i>
             <h4 style="color: #0D47A1; margin: 15px 0;">Eye Disease Detection</h4>
-            <p style="color: #555;">Detect retinopathy, glaucoma, and cataracts early with AI-powered analysis.</p>
+            <p style="color: #555;">AI-powered scans enable early detection of eye diseases like retinopathy, cataracts, glaucoma, and macular degeneration.</p>
         </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown("""
+        <div style="
+            background: #fff; 
+            padding: 20px; 
+            border-radius: 16px; 
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+            margin-bottom: 20px;">
+                <i class="fas fa-ribbon" style="font-size: 2rem; color: #0D47A1;"></i>
+                <h4 style="color: #0D47A1; margin: 15px 0;">Breast Cancer Detection</h4>
+                <p style="color: #555;">AI helps detect breast cancer early using mammograms and MRI scans, improving treatment, monitoring, and recovery chances.</p>
+            </div>
     """, unsafe_allow_html=True)
 
 with col2:
@@ -221,30 +239,40 @@ with col2:
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
             margin-bottom: 20px;">
             <i class="fas fa-heart" style="font-size: 2rem; color: #0D47A1;"></i>
-            <h4 style="color: #0D47A1; margin: 15px 0;">Cardiovascular Disease</h4>
-            <p style="color: #555;">Proactively detect heart conditions and disease using AI-driven data analysis.</p>
+            <h4 style="color: #0D47A1; margin: 15px 0;">Cardiovascular Disease Detection</h4>
+            <p style="color: #555;">AI-powered scans enable early detection of cardiovascular diseases (CVD) through advanced data analysis.</p>
         </div>
     """, unsafe_allow_html=True)
 
+    st.markdown("""
+        <div style="
+            background: #fff; 
+            padding: 20px; 
+            border-radius: 16px; 
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+            margin-bottom: 20px;">
+            <i class="fas fas fa-head-side-mask" style="font-size: 2rem; color: #0D47A1;"></i>
+            <h4 style="color: #0D47A1; margin: 15px 0;">COPD Detection</h4>
+            <p style="color: #555;">AI-powered early detection of Chronic Obstructive Pulmonary Disease (COPD) and other lung diseases using data analysis and scans.</p>
+        </div>
+    """, unsafe_allow_html=True)
+
+
+# Our Clients Section
 st.markdown("""
-    <div class="custom-container" style="
-        background: #fff; 
-        padding: 20px; 
-        border-radius: 16px; 
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
-        text-align: center;
-        margin: 0 auto 5rem; width: 100%; max-width: 600px;">
-        <i class="fas fa-ribbon" style="font-size: 2rem; color: #0D47A1;"></i>
-        <h4 style="color: #0D47A1; margin: 15px 0;">Breast Cancer Detection</h4>
-        <p style="color: #555;">AI helps detect breast cancer early using mammograms and MRI scans, improving treatment success.</p>
+    <div style="text-align: center; margin-bottom: 2.5rem; margin-top: 4rem;">
+        <div style="font-size: 2.25rem; color: #0D47A1; font-weight: bold;">Our Clients</div>
+        <p style="color: #555; font-size: 1rem; margin-bottom: 1.5rem;">
+            We are proud to work with a diverse group of clients across the healthcare industry:
+        </p>
     </div>
-    <style>
-        @media (max-width: 600px) {
-            .custom-container {
-                text-align: left !important;
-            }
-        }
-    </style>
+""", unsafe_allow_html=True)
+
+st.markdown(f"""
+    <div>
+        <img src="data:image/png;base64,{clients1}" alt="Client Image 1" style="width: 100%; height: auto; border-radius: 12px; margin-bottom: 20px;">
+        <img src="data:image/png;base64,{clients2}" alt="Client Image 2" style="width: 100%; height: auto; border-radius: 12px">
+    </div>
 """, unsafe_allow_html=True)
 
 
@@ -298,7 +326,7 @@ st.markdown("""
 st.markdown("""
     <div className="footer" style="
         text-align: center; 
-        margin-top: 2rem; 
+        margin-top: 5rem; 
         padding: 32px; 
         background: #212121; 
         border-radius: 16px; 
