@@ -253,7 +253,7 @@ with col2:
             margin-bottom: 20px;">
             <i class="fas fas fa-head-side-mask" style="font-size: 2rem; color: #0D47A1;"></i>
             <h4 style="color: #0D47A1; margin: 15px 0;">COPD Detection</h4>
-            <p style="color: #555;">AI-powered early detection of Chronic Obstructive Pulmonary Disease (COPD) and other lung diseases using data analysis and scans.</p>
+            <p style="color: #555;">AI-powered early detection of Chronic Obstructive Pulmonary Disease (COPD) and other lung diseases using data analysis and scans.<br>Many other innovative healthcare AI models under our research and development stages.</p>
         </div>
     """, unsafe_allow_html=True)
 
@@ -333,7 +333,7 @@ st.markdown("""
         color: #E3F2FD; 
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
         <div style="font-size: 2.25rem; margin-bottom: 16px; color: #1976D2; font-weight: bold;">Ready to Revolutionize Healthcare?</div>
-        <p style="font-size: 1.1rem; margin-bottom: 24px;">Join us in leveraging AI for better health outcomes and sustainable systems.</p>
+        <p style="font-size: 1.1rem; margin-bottom: 24px;">Connect with us in leveraging AI for better health outcomes and sustainable systems.</p>
         <a href="https://www.aimedmodels.com" target="_blank" style="
             display: inline-block; 
             padding: 12px 35px; 
