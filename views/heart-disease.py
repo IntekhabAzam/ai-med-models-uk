@@ -9,7 +9,7 @@ from streamlit_option_menu import option_menu
 from utils import get_img_as_base64, preprocess_tabular
 
 backgroundImg = get_img_as_base64("assets/2.png")
-modelImage = get_img_as_base64("assets/eye_disease_icon.png")
+modelImage = get_img_as_base64("assets/heart_disease_icon.png")
 
 # Load Models
 heart_disease_model = joblib.load('models/heart_disease_model.pkl')
